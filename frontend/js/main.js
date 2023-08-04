@@ -1,9 +1,9 @@
+const form = document.getElementById("searchBar");
+const output = document.getElementById("cookies");
 
-    document.getElementById("submitButton").onclick = function() {
-      // Your JavaScript function code here
-      alert("Button clicked!");
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
 
-
-      const output = document.getElementById("cookies");
-      output.textContent = `> ${document.cookie}`;
-    };
+  // Change the text content of the element
+  output.textContent = `the cookie is: ${document.cookie}`;
+});
