@@ -82,7 +82,7 @@ header h1 {
 header form {
     margin: 0;
     flex: 3;
-    display: inline;
+    display: flex;
 }
 
 header nav {
@@ -113,6 +113,7 @@ input[type="submit"] {
     font-size: 16px;
     color: #333;
     outline: none;
+    margin-right: 10px;
 }
 
 input[type="search"] {
@@ -132,3 +133,56 @@ input[type="submit"]:hover {
 }
 
 /* NAV BAR END */
+
+/* OPTIMIZATION FOR MOBILE */
+
+@media only screen and (max-width: 800px) {
+    
+    /* ARTICLE  */
+    body main aside.tags {
+        display: none;
+    }
+
+    body main aside.ad {
+        display: none;
+    }
+
+    body main article {
+        padding-left: unset;
+        padding-right: unset;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    /* HEADER */
+
+    header {
+        padding: 0;
+    }
+
+    header h1 {
+        padding-left: 5px;
+    }
+
+    header nav ul li {
+        min-width: unset;
+        margin-left: 5px;
+        padding: 0;
+    }
+
+    header h1 {
+        flex: unset;
+    }
+    
+    header form {
+        flex: unset;
+    }
+
+    header nav {
+        flex: unset;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+  }
