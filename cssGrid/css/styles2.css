@@ -1,0 +1,39 @@
+body div.wrapper {
+    display: grid;
+    min-width: 1000px;
+    min-height: 800px;
+    justify-content: stretch; 
+    grid-template-areas: 
+        "header header header header"
+        "menu content content content"
+        "menu content content content"
+        "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header {
+    background-color: blanchedalmond;
+    grid-area: header;
+}
+
+footer {
+    background-color: aqua;
+    grid-area: footer;
+}
+
+main {
+    background-color: red;
+    grid-area: content;
+}
+
+aside {
+    background-color: yellow;
+    grid-area: menu;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
