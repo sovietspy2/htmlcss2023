@@ -127,3 +127,10 @@ body > main {
   display: flex;
   flex-direction: column;
 }
+
+/* MODAL */
+
+.modal {
+  display: none;
+  z-index: 1;
+}
