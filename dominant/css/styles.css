@@ -29,7 +29,7 @@ header > p {
 
 #mainWrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */ 
 }
 
 nav { 

@@ -15,16 +15,19 @@
       <p id="username"></p>
     </header>
 
+
     <div id="mainWrapper">
       <nav>
         <ul>
-          <li><a id="login" href="#">login</a></li>
-          <li><a id="register" href="#">register</a></li>
-          <li><a href="#">information</a></li>
+          <li><a href="/home" data-link>home</a></li>
+          <li><a id="login" href="#" data-link>login</a></li>
+          <li><a id="register" href="#" data-link>register</a></li>
+          <li><a href="/settings" data-link>settings</a></li>
         </ul>
       </nav>
        
       <main>
+        <div id="app" />
         <article>
           <h2>
             My first post
@@ -69,6 +72,6 @@
   
     </div>
     <footer>Created by SovietSpy2 @ 2023</footer>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
