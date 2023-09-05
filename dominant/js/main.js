@@ -1,4 +1,5 @@
 import HomeView from "./views/HomeView";
+import LoginView from "./views/LoginView";
 import SettingsView from "./views/SettingsView";
 
 
@@ -27,6 +28,7 @@ const navigateTo = url => {
 const router = async () => {
     const routes = [
         { path: "/", view: HomeView },
+        { path: "/login", view: LoginView },
         { path: "/settings/:id", view: SettingsView },
         { path: "/settings", view: SettingsView }
     ];
