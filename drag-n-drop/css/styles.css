@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.drag {
+    height: 200px;
+    width: 500px;
+    background-color: antiquewhite;
+}
+
+#dark {
+    background-color: burlywood;
+}
+
+
+.drag span {
+    background-color: yellow;
+    margin: 25px;
+}
+
+.over {
+    border: 2px dotted red;
+}
